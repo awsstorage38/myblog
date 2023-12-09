@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Login Page from login</title>
+</head>
+
+<header>
+    <h1>Welcome to AWS learning</h1>
+   
+    <img src="{{ url_for('static', filename='images/bloglogo2.png') }}" class="logo">
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <h2>Login or Registration form</h2>
+    <form action="login" method="POST">
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <form action="submit" method="POST">
+        <input type="text" id="username" name="username" placeholder="Username" required><br>
+        <input type="password" id="password" name="password" placeholder="Password" required ><br>
+      
+        <input type="submit" value="Register">
+      </form>
+
+</body>
+</html>
